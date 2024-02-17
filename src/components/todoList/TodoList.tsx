@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { TodoType } from "../../types";
+
 import TodoForm from "../todoForm/TodoForm";
 import TodoItem from "../todoItem/TodoItem";
 import scss from "./TodoList.module.scss";
+import { TodoType } from "../../types";
 const url =
 	"https://api.elchocrud.pro/api/v1/2109de2a5e5dfc95669505052fcc842f/mytodolist";
 

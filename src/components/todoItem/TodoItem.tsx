@@ -1,6 +1,7 @@
 import React from "react";
-import { TodoType } from "../../types";
+
 import scss from "./TodoItem.module.scss";
+import { TodoType } from "../../types";
 interface TodoItemProps {
 	todo: TodoType;
 	toggleTodo: (id: number) => void;

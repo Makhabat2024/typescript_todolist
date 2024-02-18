@@ -28,7 +28,8 @@ const TodoList: React.FC = () => {
 			const newTodoItem: TodoType = {
 				text,
 				completed: false,
-				_id: Math.random() + 1,
+				// eslint-disable-next-line @typescript-eslint/no-explicit-any
+				_id: Math.random().toString() as any,
 			};
 			const response = await axios.post<TodoType>(url, newTodoItem);
 			setTodos([...todos, response.data]);
